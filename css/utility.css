@@ -47,7 +47,26 @@
 
   --aaj-primary-h10: hsla(13, 70%, 70%, 1);
   --aaj-blue-h10: hsla(221, 69%, 70%, 1);
+}
 
+.aaj-primary {
+  color: #4169e1;
+}
+
+.success {
+  color: #5cb85c;
+}
+
+.info {
+  color: #5bc0de;
+}
+
+.danger {
+  color: #fe2013;
+}
+
+.error {
+  color: #ff165e;
 }
 
 @media (min-width:320px) {
@@ -508,6 +527,26 @@ table {
 
 .mx-5 {
   margin: 0 4rem;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.mr-2 {
+  margin-right: 1.5rem;
+}
+
+.mr-3 {
+  margin-right: 2rem;
+}
+
+.mr-4 {
+  margin-right: 3rem;
+}
+
+.mr-5 {
+  margin-right: 4rem;
 }
 
 .mt-1 {

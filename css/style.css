@@ -112,7 +112,7 @@ small{margin: 1.5rem 0;}
 
 .col-6{width: 100%;}
 
-.col-6 img{width: 100%;display: block;cursor: pointer;filter: grayscale(100%);}
+.col-6 img{width: 50%;display: block;cursor: pointer;filter: grayscale(100%);}
 
 .col-6 img:hover{filter: grayscale(0);}
 
@@ -153,11 +153,15 @@ small{margin: 1.5rem 0;}
 
 /* .social-icon a:hover{color: #fff;} */
 
+.social-icon i{padding: 0.1rem;width:20px;}
+
+.social-icon .gmail:hover {color: var(--error-color);}
+
 .social-icon .whatsapp:hover {color: var(--success-color);}
 
 .social-icon .facebook:hover {color: var(--aaj-primary);}
 
-.social-icon .instagram:hover {color: var(--error-color);}
+.social-icon .instagram:hover {color: var(--danger-color);}
 
 .social-icon .twitter:hover {color: var(--info-color);}
 
