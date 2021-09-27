@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png" />
+  <!-- <link rel="icon" href="/favicon.ico" /> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://kit.fontawesome.com/1f33897372.js" crossorigin="anonymous"></script>
+
+  <title>eShop | Product Details</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/utility.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">
+        <a href="#"><img src="/images/dummy-logo.png" alt="Logo"></a>
+      </div>
+      <nav>
+        <ul id="menu-items">
+          <li><a href="/index.html" class="nav-link">Home</a></li>
+          <li><a href="/products.html" class="nav-link active">Products</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#account" class="nav-link">Account</a></li>
+        </ul>
+      </nav>
+      <div class="cart-wrap">
+        <a href="/cart.html"><img src="/images/cart.png" width="30px" height="30px" alt="Cart"></a>
+        <div class="counter">32</div>
+      </div>
+      <img src="/images/menu.png" class="menu-icon" alt="Menu" onclick="menuToggle()">
+    </div>
+  </div>
+
+  <div class="container-sm single-product">
+    <div class="grid">
+      <div class="col-2">
+        <img src="/images/pd-img.png" alt="products" id="lg-img">
+        <div class="thumb-img">
+          <div class="thumb-img-col">
+            <img src="/images/pdt0-img.png" class="sm-img" alt="Thumb img">
+          </div>
+          <div class="thumb-img-col">
+            <img src="/images/pdt1-img.png" class="sm-img" alt="Thumb img">
+          </div>
+          <div class="thumb-img-col">
+            <img src="/images/pdt2-img.png" class="sm-img" alt="Thumb img">
+          </div>
+          <div class="thumb-img-col">
+            <img src="/images/pdt3-img.png" class="sm-img" alt="Thumb img">
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <p>Home / T-shirt</p>
+        <h1>Printed shirt by eShop</h1>
+        <h4>N60.00</h4>
+
+        <select name="" id="" class="my-1">
+          <option value="">Select size</option>
+          <option value="">XXL</option>
+          <option value="">XL</option>
+          <option value="">Large</option>
+          <option value="">Medium</option>
+          <option value="">Small</option>
+        </select>
+        <input type="number" value="1">
+        <a href="#" class="btn">Add to cart</a>
+
+        <h3 class="my-2">Product Details <i class="fa fa-indent"></i></h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptate.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-sm">
+    <div class="row-2">
+      <h2>Related Products</h2>
+      <p><a href="#">View more</a></p>
+    </div>
+  </div>
+
+  <div class="products">
+    <div class="container-sm">
+      <div class="grid grid-6">
+        <div class="col-4"><img src="/images/p9.jpg" alt="Products">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+        <div class="col-4"><img src="/images/w-bag1.png" alt="Bags">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+        <div class="col-4"><img src="/images/shoe3.png" alt="Shoes">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+        <div class="col-4"><img src="/images/p10.jpeg" alt="Products">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+        <div class="col-4"><img src="/images/p11.jpg" alt="Shirts">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+        <div class="col-4"><img src="/images/pdt1-img.png" alt="Bags">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="grid grid-4 mb-3">
+        <div class="text-center my-2">
+          <i class="fa fa-gem fa-2x"></i>
+          <h3 class="text-center">High-quality Goods</h3>
+          <p>Enjoy top quality <br> items for less</p>
+        </div>
+        <div class="text-center my-2">
+          <i class="fa fa-headset fa-2x"></i>
+          <h3 class="text-center">24/7 Livechat</h3>
+          <p>Get instant assistance <br> whenever you need it</p>
+        </div>
+        <div class="text-center my-2">
+          <i class="fa fa-bus fa-2x"></i>
+          <h3 class="text-center">Express Shipping</h3>
+          <p>Fast &amp; reliable <br> delivery options</p>
+        </div>
+        <div class="text-center my-2">
+          <i class="fa fa-credit-card fa-2x"></i>
+          <h3 class="text-center">Secure Payment</h3>
+          <p>Multiple safe payment <br> methods</p>
+        </div>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="footer-col-1">
+          <h3>Company Information</h3>
+          <ul>
+            <li><a href="#about" class="footer-link">About eShop</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Return Policy</a></li>
+            <li><a href="#" class="footer-link">Terms And Conditions</a></li>
+            <li><a href="#" class="footer-link">Intellectual Property Claims</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-2">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#" class="footer-link">Track Order</a></li>
+            <li><a href="#" class="footer-link">Shipping FAQ</a></li>
+            <li><a href="#" class="footer-link">Order FAQ</a></li>
+            <li><a href="#" class="footer-link">Shipping Methods</a></li>
+            <li><a href="#" class="footer-link">Payment Methods</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-3">
+          <h3>Contact us</h3>
+          <ul class="social-icon">
+            <li><a href="#" class="whatsapp"><i class="fa fa-whatsapp"></i> WhatsApp</a></li>
+            <li><a href="#" class="facebook"><i class="fa fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="#" class="instagram"><i class="fa fa-instagram"></i> Instagram</a></li>
+            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i> Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+      <p class="copyright">Copyright &copy;2021 - Ekogeda. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    let menuItems = document.getElementById('menu-items')
+    menuItems.style.maxHeight = "0px"
+
+    function menuToggle() {
+      if (menuItems.style.maxHeight == "0px") {
+        menuItems.style.maxHeight = "200px"
+      } else {
+        menuItems.style.maxHeight = "0px"
+      }
+    }
+
+    let largeThumb = document.querySelector('#lg-img')
+    let smallThumbs = document.querySelectorAll('.sm-img')
+
+    smallThumbs.forEach((sThumb) => {
+      sThumb.addEventListener("click", () => {
+        (largeThumb.src = sThumb.src),
+          smallThumbs.forEach((tab) => {
+            tab.classList.remove("activeThumb");
+          }),
+          sThumb.classList.add("activeThumb");
+      });
+    })
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.png" />
+  <!-- <link rel="icon" href="/favicon.ico" /> -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://kit.fontawesome.com/1f33897372.js" crossorigin="anonymous"></script>
+
+  <title>CMB | Home</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/utility.css">
+</head>
+
+<body>
+  <div class="header" id="home">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="/index.html"><img src="/images/dummy-logo.png" alt="Logo"></a>
+        </div>
+        <nav>
+          <ul id="menu-items">
+            <li><a href="/index.html" class="nav-link active">Home</a></li>
+            <li><a href="/products.html" class="nav-link">Products</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#account" class="nav-link">Account</a></li>
+          </ul>
+        </nav>
+        <div class="cart-wrap">
+          <a href="/cart.html"><img src="/images/cart.png" width="30px" height="30px" alt="Cart"></a>
+          <div class="counter">32</div>
+        </div>
+        <img src="/images/menu.png" class="menu-icon" alt="Menu" onclick="menuToggle()">
+      </div>
+
+      <div class="grid">
+        <div class="col-2">
+          <h1>Classic Men's Boutique</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Beatae alias officiis, velit illo error
+            itaque?
+          </p>
+          <a href="#" class="btn">Explore now &#8594;</a>
+        </div>
+        <div class="col-2">
+          <img src="/images/aaj_add_to_cart.svg" class="hero" alt="Hero">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="categories">
+    <div class="container-sm">
+      <h2 class="title">Categories</h2>
+      <div class="grid grid-3">
+        <div class="col-3">
+          <a href="#"><img src="/images/w-bag2.png" alt="Top"></a>
+        </div>
+        <div class="col-3">
+          <a href="#"><img src="/images/c-twom.png" alt="Top"></a>
+        </div>
+        <div class="col-3">
+          <a href="#"><img src="/images/shoe4.png" alt="Top"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="products">
+    <div class="container-sm">
+      <h2 class="title">Featured Products</h2>
+      <div class="grid grid-4">
+        <div class="col-4"><img src="/images/p9.jpg" alt="Products">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+        <div class="col-4"><img src="/images/w-bag1.png" alt="Bags">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+        <div class="col-4"><img src="/images/shoe3.png" alt="Shoes">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+        <div class="col-4"><img src="/images/p10.jpeg" alt="Products">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+      </div>
+
+      <h2 class="title">Latest Products</h2>
+      <div class="grid grid-4">
+        <div class="col-4"><img src="/images/p11.jpg" alt="Shirts">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+        <div class="col-4"><img src="/images/pdt1-img.png" alt="Bags">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+        <div class="col-4"><img src="/images/c-bagsm.png" alt="Shoes">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+        <div class="col-4"><img src="/images/c-accessoriesm.png" alt="Products">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+
+        <div class="col-4"><img src="/images/c-bags.png" alt="Shirts">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+        <div class="col-4"><img src="/images/c-shoesm.png" alt="Bags">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+        <div class="col-4"><img src="/images/jewelry3.png" alt="Shoes">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+        <div class="col-4"><img src="/images/p10.jpeg" alt="Shirts">
+          <h4>White Shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>₦50.00</p>
+          <a href="/productdetails.html" class="btn btn-light cart-btn">&plus; View More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="title">Special Offer</h2>
+  <div class="offer">
+    <div class="container-sm">
+      <div class="grid">
+        <div class="col-2">
+          <img src="/images/jewelry2.png" class="offer-img" alt="Product">
+        </div>
+        <div class="col-2">
+          <p>Exclusive available on CMB</p>
+          <h1>Smart Watch</h1>
+          <small class="d-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cum excepturi!
+            Velit ad nihil
+            facilis.</small>
+          <a href="#" class="btn">Buy now &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="testimonial">
+    <div class="container-sm">
+      <h2 class="title">Testimonials</h2>
+      <div class="grid grid-3">
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis esse quis nulla sequi ullam commodi
+            provident voluptatum sapiente fugit? Perferendis laborum veniam accusantium omnis dignissimos ullam,
+            consequuntur libero soluta numquam.</p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <img src="/images/user.png" alt="User">
+          <h3>Smith Smooth</h3>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis esse quis nulla sequi ullam commodi
+            provident voluptatum sapiente fugit? Perferendis laborum veniam accusantium omnis dignissimos ullam,
+            consequuntur libero soluta numquam.</p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <img src="/images/logo.png" alt="User">
+          <h3>John Doe</h3>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis esse quis nulla sequi ullam commodi
+            provident voluptatum sapiente fugit? Perferendis laborum veniam accusantium omnis dignissimos ullam,
+            consequuntur libero soluta numquam.</p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <img src="/images/user.png" alt="User">
+          <h3>Jane Doe</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="brands">
+    <div class="container-sm">
+      <h2 class="title">Brands</h2>
+      <div class="grid grid-6">
+        <div class="col-6"><img src="/images/Web-Design.png" alt="Brands"></div>
+        <div class="col-6"><img src="/images/Web-Design.png" alt="Brands"></div>
+        <div class="col-6"><img src="/images/Web-Design.png" alt="Brands"></div>
+        <div class="col-6"><img src="/images/Web-Design.png" alt="Brands"></div>
+        <div class="col-6"><img src="/images/Web-Design.png" alt="Brands"></div>
+        <div class="col-6"><img src="/images/Web-Design.png" alt="Brands"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="grid grid-4 mb-3">
+        <div class="text-center my-2">
+          <i class="fa fa-gem fa-2x"></i>
+          <h3 class="text-center">High-quality Goods</h3>
+          <p>Enjoy top quality <br> items for less</p>
+        </div>
+        <div class="text-center my-2">
+          <i class="fa fa-headset fa-2x"></i>
+          <h3 class="text-center">24/7 Livechat</h3>
+          <p>Get instant assistance <br> whenever you need it</p>
+        </div>
+        <div class="text-center my-2">
+          <i class="fa fa-bus fa-2x"></i>
+          <h3 class="text-center">Express Shipping</h3>
+          <p>Fast &amp; reliable <br> delivery options</p>
+        </div>
+        <div class="text-center my-2">
+          <i class="fa fa-credit-card fa-2x"></i>
+          <h3 class="text-center">Secure Payment</h3>
+          <p>Multiple safe payment <br> methods</p>
+        </div>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="footer-col-1">
+          <h3>Company Information</h3>
+          <ul>
+            <li><a href="#about" class="footer-link">About CMB</a></li>
+            <li><a href="#" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#" class="footer-link">Return Policy</a></li>
+            <li><a href="#" class="footer-link">Terms And Conditions</a></li>
+            <li><a href="#" class="footer-link">Intellectual Property Claims</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-2">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#" class="footer-link">Track Order</a></li>
+            <li><a href="#" class="footer-link">Shipping FAQ</a></li>
+            <li><a href="#" class="footer-link">Order FAQ</a></li>
+            <li><a href="#" class="footer-link">Shipping Methods</a></li>
+            <li><a href="#" class="footer-link">Payment Methods</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-3">
+          <h3>Contact us</h3>
+          <ul class="social-icon">
+            <li><a href="#" class="whatsapp"><i class="fa fa-whatsapp"></i> WhatsApp</a></li>
+            <li><a href="#" class="facebook"><i class="fa fa-facebook-f"></i> Facebook</a></li>
+            <li><a href="#" class="instagram"><i class="fa fa-instagram"></i> Instagram</a></li>
+            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i> Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+      <p class="copyright">Copyright &copy;2021 - Ekogeda. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    let menuItems = document.getElementById('menu-items')
+    menuItems.style.maxHeight = "0px"
+
+    function menuToggle() {
+      if (menuItems.style.maxHeight == "0px") {
+        menuItems.style.maxHeight = "200px"
+      } else {
+        menuItems.style.maxHeight = "0px"
+      }
+    }
+  </script>
+</body>
+
+</html>
