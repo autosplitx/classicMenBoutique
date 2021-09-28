@@ -31,10 +31,10 @@
       <nav>
         <ul id="menu-items">
           <li><a href="/index.html" class="nav-link">Home</a></li>
-          <li><a href="/products.html" class="nav-link active">Products</a></li>
+          <li><a href="/products.html" class="nav-link">Products</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
-          <li><a href="/account.html" class="nav-link">Account</a></li>
+          <li><a href="/account.html" class="nav-link active"><i class="fa fa-user"></i></a></li>
         </ul>
       </nav>
       <div class="cart-wrap">
@@ -46,74 +46,39 @@
   </div>
 
 
-  <div class="container-sm cart-container">
-    <table>
-      <tr>
-        <th>Product</th>
-        <th>Quantity</th>
-        <th>Subtotal</th>
-      </tr>
-      <tr>
-        <td>
-          <div class="cart-info">
-            <img src="/images/pdt3-img.png" alt="cart">
-            <div>
-              <p>Printed shirt</p>
-              <small>Price: N5.00</small> <br>
-              <a href="#">Remove</a>
+  <div class="account">
+    <div class="container">
+      <div class="grid">
+        <div class="col-2">
+          <img src="/images/hero1.svg" width="100%" alt="Hero">
+        </div>
+        <div class="col-2">
+          <div class="form-container">
+            <div class="form-btn">
+              <span onclick="login()">Login</span>
+              <span onclick="register()">Register</span>
+              <hr id="indicator">
             </div>
-          </div>
-        </td>
-        <td><input type="number" name="" id="" value="1"></td>
-        <td>N10.00</td>
-      </tr>
-      <tr>
-        <td>
-          <div class="cart-info">
-            <img src="/images/pdt2-img.png" alt="cart">
-            <div>
-              <p>Printed shirt</p>
-              <small>Price: N5.00</small> <br>
-              <a href="#">Remove</a>
-            </div>
-          </div>
-        </td>
-        <td><input type="number" name="" id="" value="1"></td>
-        <td>N10.00</td>
-      </tr>
-      <tr>
-        <td>
-          <div class="cart-info">
-            <img src="/images/pdt1-img.png" alt="cart">
-            <div>
-              <p>Printed shirt</p>
-              <small>Price: N5.00</small> <br>
-              <a href="#">Remove</a>
-            </div>
-          </div>
-        </td>
-        <td><input type="number" name="" id="" value="1"></td>
-        <td>N10.00</td>
-      </tr>
-    </table>
 
-    <div class="total-price">
-      <table>
-        <tr>
-          <td>Subtotal</td>
-          <td>N200.00</td>
-        </tr>
-        <tr>
-          <td>Tax</td>
-          <td>N20.00</td>
-        </tr>
-        <tr>
-          <td>Total</td>
-          <td>N200.00</td>
-        </tr>
-      </table>
+            <form id="loginUser">
+              <input type="text" placeholder="Username">
+              <input type="password" placeholder="********">
+              <button type="submit" class="btn">Login</button>
+              <a href="#!">Forgot password</a>
+            </form>
+
+            <form id="regUser">
+              <input type="text" placeholder="Username">
+              <input type="email" placeholder="user@mail.com">
+              <input type="password" placeholder="********">
+              <button type="submit" class="btn">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
 
   <footer class="footer" id="contact">
     <div class="container">
@@ -196,6 +161,23 @@
         menuItems.style.maxHeight = "0px"
       }
     }
+
+    let loginUser = document.getElementById('loginUser')
+    let regUser = document.getElementById('regUser')
+    let indicator = document.getElementById('indicator')
+
+    function register() {
+      regUser.style.transform = 'translateX(0)'
+      loginUser.style.transform = 'translateX(0)'
+      indicator.style.transform = 'translateX(100px)'
+    }
+
+    function login() {
+      regUser.style.transform = 'translateX(300px)'
+      loginUser.style.transform = 'translateX(300px)'
+      indicator.style.transform = 'translateX(0)'
+    }
+
   </script>
 </body>
 

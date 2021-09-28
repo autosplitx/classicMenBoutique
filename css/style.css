@@ -137,8 +137,7 @@ small{margin: 1.5rem 0;}
 
 .footer hr{border: none;background: #b5b5b5;height: 1px; margin: 20px 0;}
 
-.active{color: hsl(225, 73%, 35%);font-weight: 600;}
-
+.active{color: hsl(225, 73%, 65%);font-weight: 600;}
 
 .footer-link,.nav-link {position: relative;}
 
@@ -219,6 +218,34 @@ td img{width: 80px;height: 100px;margin-right: 10px;}
 
 th:last-child,td:last-child{text-align: right;}
 
+
+/* ---------------------------- account start ---------------------------- */
+.account{padding: 50px 0;background: radial-gradient(#fff,royalblue);}
+
+.account .grid{grid-template-columns: 1fr;}
+
+.form-container{background: #fff;width: 300px;height: 400px;position: relative;text-align: center;padding: 20px 0;margin: auto;box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);overflow: hidden;}
+
+.form-container span{font-weight: 700;padding: 0 10px;color: #555;cursor: pointer;width: 100px;display: inline-block;}
+
+.form-btn{display: inline-block;}
+
+.form-container form{max-width: 300px;padding: 0 20px; position: absolute;top: 130px;transition: transform 1s;}
+
+form input{width: 100%;height: 30px;margin: 10px 0;padding: 0 10px;border: 1px solid #ccc;}
+
+form .btn{width: 100%;border: none;cursor: pointer;margin: 10px 0;}
+
+form .btn:focus{outline: none;}
+
+form a{font-size: 12px;}
+
+#loginUser{left: -300px;}
+
+#regUser{left: 0;}
+
+#indicator{width: 100px;border: none;background: #18399a;height: 3px;margin-top: 8px;transform: translateX(100px);transition: transform 1s;}
+
 /* ---------------------------- media query for menu ---------------------------- */
 @media (min-width:320px) {
 
@@ -289,6 +316,11 @@ nav ul li a {color: #555;}
 
 .total-price table{max-width: 305px;}
 
+
+/* ---------------------------- account start ---------------------------- */
+.account .grid{grid-template-columns: repeat(2,1fr);}
+
+
 }
 
 @media (min-width:961px) {
@@ -344,10 +376,11 @@ nav ul li a {color: #555;}
 
 .paginate span:hover{background: #18399a;color: #fff;}
 
-
-
 /* ---------------------------- cart page ---------------------------- */
 .total-price table{max-width: 440px;}
+
+
+
 
 }
 
