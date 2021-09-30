@@ -473,7 +473,7 @@ h1.titled {
       background-color: var(--light-color);
       border-top: 1px solid var(--color-gray-default);
       position: absolute;
-      top: 100%;
+      /* top: 100%; */
       left: 0;
       z-index: 1000;
 }
@@ -541,6 +541,7 @@ h1.titled {
       place-content: center;
       overflow: hidden;
       max-height: clamp(480px, 50vh, 600px);
+      aspect-ratio: auto 3/1;
 }
 
 .coupon>*,
@@ -704,7 +705,7 @@ h1.titled {
 }
 
 .option>* {
-      width: 100%;
+      width: 34%;
 }
 
 .option img {
@@ -812,11 +813,6 @@ h1.titled {
       margin: 1rem 0;
 }
 
-.hot {
-      background: #fff;
-      padding: 0.5rem;
-}
-
 .carousel {
       background: #fff;
 }
@@ -866,46 +862,6 @@ h1.titled {
       gap: 0.5rem;
 }
 
-.coupon-center .flex {
-      justify-content: space-between;
-}
-
-.coupon-center .grid {
-      grid-template-columns: 1fr 3fr 1fr;
-      padding: 0.6rem;
-}
-
-.coupon-center .grid:not(:nth-last-of-type(1)) {
-      border-bottom: 1px dashed var(--color-gray-light);
-}
-
-.coupon-center .grid img {
-      width: 100%;
-      display: block;
-}
-
-.coupon-center .grid h3 {
-      color: var(--primary-color);
-      font-weight: 700;
-}
-
-.coupon-center .grid p {
-      color: var(--color-gray-default);
-      font-size: 0.8rem;
-}
-
-.coupon-center .grid .btn {
-      display: block;
-      padding: 0.1rem;
-      text-align: center;
-      color: var(--primary-color);
-      border-radius: 20px;
-}
-
-.coupon-center .grid .btn:hover {
-      transform: scale(0.98);
-}
-
 .text-center.my-1 .btn {
       border-radius: 0;
       padding: 0.25rem 1rem;
@@ -940,18 +896,6 @@ h1.titled {
       font-size: 0.8rem;
 }
 
-.footer_section .foot {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 2fr;
-      align-items: flex-start;
-}
-
-.footer_section input {
-      width: 100%;
-      display: block;
-      padding: 0.3rem;
-}
-
 .footer_section .search i {
       padding: 0 0.5rem;
 }
@@ -980,13 +924,30 @@ h1.titled {
       transform-origin: left;
 }
 
-.social-links .footer-link,
-.social-links p {
-      font-size: 0.7rem;
+.social-icon i {
+      padding: 0.1rem;
+      width: 20px;
 }
 
-.social-links .footer-link {
-      text-decoration: underline;
+.social-icon .gmail:hover {
+      color: var(--error-color);
+}
+
+.social-icon .whatsapp:hover {
+      color: var(--success-color);
+}
+
+.social-icon .facebook:hover {
+      color: var(--primary-color);
+}
+
+.social-icon .instagram:hover {
+      color: var(--danger-color);
+}
+
+
+.social-icon {
+      font-size: 0.8rem;
 }
 
 .social-icon a {
@@ -998,16 +959,12 @@ h1.titled {
       margin-right: 1.5rem;
 }
 
-.social-icon a:hover .fa-facebook-f {
+.social-icon a:hover .fa-facebook {
       color: var(--primary-color);
 }
 
 .social-icon a:hover .fa-instagram {
-      color: var(--primary-color);
-}
-
-.social-icon a:hover .fa-twitter {
-      color: var(--info-color);
+      color: var(--color-danger);
 }
 
 ul.breadcrumb li {
@@ -2506,11 +2463,7 @@ a.sub-btn {
       }
 
       .hots.grid {
-            gap: 1rem;
-      }
-
-      .hots.grid.grid-3 {
-            grid-template-columns: 1fr;
+            gap: 1.5rem;
       }
 
       .hot-title {
@@ -2522,14 +2475,6 @@ a.sub-btn {
             margin-right: 0.5rem;
       }
 
-      .coupon-center a {
-            font-size: 80%;
-      }
-
-      .coupon-center .grid h3 {
-            font-size: 100%;
-      }
-
       .text-center.my-1 .btn {
             font-size: 70% !important;
       }
@@ -2539,32 +2484,9 @@ a.sub-btn {
             gap: 0.2rem;
       }
 
-      .footer_section .foot {
-            display: grid;
-            grid-gap: 1rem;
-            grid-template-columns: 1fr !important;
-            grid-template-areas: "company""customer""cooperation""social";
-            width: 100%;
-      }
-
-      .company-info {
-            grid-area: company;
-            padding: 0 2rem;
-      }
-
-      .customer-service {
-            grid-area: customer;
-            padding: 0 2rem;
-      }
-
-      .cooperation {
-            grid-area: cooperation;
-            padding: 0 2rem;
-      }
-
-      .social-links {
-            grid-area: social;
-            padding: 0 2rem;
+      .footer_section .grid.grid-3 {
+            grid-template-columns: 1fr;
+            gap: 2rem;
       }
 
       .footer_section h3 {
@@ -2862,22 +2784,6 @@ a.sub-btn {
             font-weight: 700;
       }
 
-      .coupon-center a {
-            font-size: 70%;
-      }
-
-      .coupon-center .grid {
-            padding: 0.25rem !important;
-      }
-
-      .coupon-center .grid h3 {
-            font-size: 90% !important;
-      }
-
-      .coupon-center .grid p {
-            font-size: 70% !important;
-      }
-
       .footer_section h3 {
             font-size: 100%;
       }
@@ -2960,5 +2866,13 @@ a.sub-btn {
 
       h1.titled {
             font-size: 3rem;
+      }
+
+      .footer_section .grid.grid-3 {
+            align-items: flex-start !important;
+      }
+
+      .footer_section h1 {
+            margin-bottom: 0.5rem;
       }
 }

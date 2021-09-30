@@ -47,7 +47,6 @@
   --color-yellow-h: hsla(42, 93%, 64%, 1);
   --color-green-h: hsla(147, 50%, 47%, 1);
 
-
   --header-height: 60px;
   font-family: Roboto, sans-serif;
   font-family: Oxygen, sans-serif;
@@ -55,6 +54,22 @@
 
 .primary-color {
   color: #0275d8;
+}
+
+.success {
+  color: #5cb85c;
+}
+
+.info {
+  color: #5bc0de;
+}
+
+.danger {
+  color: #fe2013;
+}
+
+.error {
+  color: #ff165e;
 }
 
 .bg-danger-light {
