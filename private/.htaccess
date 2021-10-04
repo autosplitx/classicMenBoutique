@@ -1,0 +1,2 @@
+# This will make the app directory not accessible to the anyone (It's private)
+Options -Indexes
