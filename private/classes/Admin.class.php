@@ -2,14 +2,15 @@
 class Admin extends DatabaseObject
 {
     protected static $table_name = "admins";
-    protected static $db_columns = ['id', 'first_name', 'last_name', 'phone', 'email', 'role', 'gender', 'address', 'hashed_password', 'active', 'terms', 'created_at', 'updated_at', 'deleted'];
+    protected static $db_columns = ['id', 'first_name', 'last_name', 'phone', 'email', 'avatar', 'role_id', 'gender', 'address', 'hashed_password', 'active', 'terms', 'created_at', 'updated_at', 'action', 'deleted'];
 
     public $id;
     public $first_name;
     public $last_name;
     public $phone;
     public $email;
-    public $role;
+    public $avatar;
+    public $role_id;
     public $gender;
     public $address;
     public $hashed_password;
@@ -17,6 +18,7 @@ class Admin extends DatabaseObject
     public $terms;
     public $created_at;
     public $updated_at;
+    public $action;
     public $deleted;
 
     public $password;
@@ -37,12 +39,14 @@ class Admin extends DatabaseObject
         $this->last_name = $args['last_name'] ?? '';
         $this->phone = $args['phone'] ?? '';
         $this->email = $args['email'] ?? '';
-        $this->role = $args['role'] ?? '';
+        $this->avatar = $args['avatar'] ?? '';
+        $this->role_id = $args['role_id'] ?? '';
         $this->gender = $args['gender'] ?? '';
         $this->address = $args['address'] ?? '';
         $this->active = $args['active'] ?? '';
         $this->terms = $args['terms'] ?? '';
         $this->password = $args['password'] ?? '';
+        $this->action = $args['action'] ?? '';
         $this->confirm_password = $args['confirm_password'] ?? '';
         $this->updated_at = $args['updated_at'] ?? date('Y-m-d H:i:s');
         $this->created_at = $args['created_at'] ?? date('Y-m-d H:i:s');

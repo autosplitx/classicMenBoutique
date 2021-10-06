@@ -16,6 +16,7 @@ if (isset($_POST['add'])) {
   $email      = $_POST['email'];
   $phone      = $_POST['phone'];
   $gender     = $_POST['gender'] ?? '';
+  $roleId    = $_POST['role_id'] ?? 2;
   $password   = $_POST['password'];
   $cPassword  = $_POST['confirm_password'];
   $terms      = $_POST['terms'] ?? '';
@@ -51,10 +52,12 @@ if (isset($_POST['add'])) {
       'first_name' => $fName,
       'last_name' => $lName,
       'email' => $email,
+      'role_id' => $roleId,
       'phone' => $phone,
       'gender' => $gender,
       'password' => $password,
       'confirm_password' => $cPassword,
+      'avatar' => $uploadedFile,
       'terms' => $terms,
     ];
 
@@ -66,25 +69,10 @@ if (isset($_POST['add'])) {
       $response['errors'] = display_errors($admin->errors);
     }
 
-    if ($result == true) {
-      $args = [
-        'admin_id' => $admin->id,
-        'avatar' => $uploadedFile,
-      ];
-
-      $dataUpload = new FileUpload($args);
-      $dataUpload->save();
-
-      if ($dataUpload->errors) {
-        http_response_code(401);
-        $response['errors'] = display_errors($dataUpload->errors);
-      }
-
-      if ($dataUpload) {
-        http_response_code(201);
-        $response['status'] = 1;
-        $response['message'] = 'Form submitted successfully. Kindly login';
-      }
+    if ($admin) {
+      http_response_code(201);
+      $response['status'] = 1;
+      $response['message'] = 'Form submitted successfully. Kindly login';
     }
   }
 }

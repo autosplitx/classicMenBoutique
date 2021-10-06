@@ -137,3 +137,9 @@
   </div>
 
   <div class="main-panel">
+
+    <style>
+      .logo-header .nav-toggle {
+        top: 18px;
+      }
+    </style>

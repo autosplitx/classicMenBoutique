@@ -5,9 +5,6 @@ class TransactionDetail extends DatabaseObject
   static protected $table_name = "transaction_details";
   static protected $db_columns = ['id', 'customer_type', 'waybill_no', 'item_type', 'weight', 'quantity', 'description', 'policy', 'declared_unit_cost', 'declared_total_cost', 'deleted'];
 
-
-
-
   public $id;
   public $customer_type;
   public $waybill_no;

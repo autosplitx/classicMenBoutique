@@ -2,22 +2,17 @@
 class Users extends DatabaseObject
 {
 
-  static protected $table_name = "admins";
-  static protected $db_columns = ['id', 'first_name', 'last_name', 'phone', 'email', 'role', 'gender', 'address', 'hashed_password', 'active', 'terms', 'created_at', 'updated_at', 'deleted'];
+  static protected $table_name = "users";
+  static protected $db_columns = ['id', 'first_name', 'last_name', 'phone', 'email', 'hashed_password', 'created_at', 'updated_at', 'deleted'];
 
   public $id;
   public $first_name;
   public $last_name;
   public $phone;
   public $email;
-  public $role;
-  public $gender;
-  public $address;
   public $hashed_password;
-  public $active;
-  public $terms;
   public $created_at;
-  public $updated_at;
+  public $update_at;
   public $deleted;
 
   public $password;
@@ -32,11 +27,6 @@ class Users extends DatabaseObject
     $this->last_name = $args['last_name'] ?? '';
     $this->phone = $args['phone'] ?? '';
     $this->email = $args['email'] ?? '';
-    $this->role = $args['role'] ?? '';
-    $this->gender = $args['gender'] ?? '';
-    $this->address = $args['address'] ?? '';
-    $this->active = $args['active'] ?? '';
-    $this->terms = $args['terms'] ?? '';
     $this->password = $args['password'] ?? '';
     $this->confirm_password = $args['confirm_password'] ?? '';
     $this->updated_at = $args['updated_at'] ?? date('Y-m-d H:i:s');
@@ -79,16 +69,12 @@ class Users extends DatabaseObject
   {
     $this->errors = [];
 
-    if (is_blank($this->terms)) {
-      $this->errors[] = "Kindly agree to our terns and conditions.";
+    if (is_blank($this->first_name)) {
+      $this->errors[] = "First name is required.";
     }
 
     if (is_blank($this->last_name)) {
       $this->errors[] = "Last name cannot be blank.";
-    }
-
-    if (is_blank($this->first_name)) {
-      $this->errors[] = "First name is required.";
     }
 
     if (is_blank($this->phone)) {

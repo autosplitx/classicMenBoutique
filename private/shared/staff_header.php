@@ -33,6 +33,11 @@
 </head>
 
 <body>
+  <style>
+    .btn {
+      padding: .375rem .75rem !important;
+    }
+  </style>
   <div class="wrapper">
     <div class="main-header">
       <div class="logo-header" data-background-color="blue">
